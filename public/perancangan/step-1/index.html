@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -317,8 +317,8 @@
         Rancangan Akhir
       </a>
     </nav>
-    <main class="flex lg:px-8 mt-2 bg-white">
-      <div
+    <div class="flex lg:px-8 mt-2 bg-white">
+      <aside
         class="w-3/12 bg-inherit hidden lg:block text-sm font-medium sticky top-14 max-h-screen overflow-auto"
       >
         <p class="font-bold mt-8">Peninjauan Lapangan</p>
@@ -390,8 +390,10 @@
             <a href="#kondisi-dan-pola-site">Kondisi dan Pola Site</a>
           </li>
         </ol>
-      </div>
-      <section class="w-full px-6 md:px-8 lg:pl-8 lg:pr-0 text-gray-700">
+      </aside>
+      <main
+        class="w-full px-6 md:px-8 lg:pl-8 lg:pr-0 pb-10 sm:pb-12 text-gray-700"
+      >
         <form>
           <div>
             <h3
@@ -458,7 +460,7 @@
                   id="table-sketsa-keterangan"
                   class="table-fixed w-full border-collapse"
                 >
-                  <thead class="bg-gray-200">
+                  <thead class="bg-gray-100">
                     <tr>
                       <th
                         class="border border-l-0 border-gray-300 p-4 w-32 md:w-full text-left font-medium"
@@ -577,7 +579,7 @@
                   id="table-batasan-site"
                   class="table-fixed w-full border-collapse"
                 >
-                  <thead class="bg-gray-200">
+                  <thead class="bg-gray-100">
                     <tr>
                       <th
                         class="border border-l-0 border-gray-300 p-4 w-32 text-left font-medium"
@@ -664,7 +666,7 @@
                 type="text"
                 id="alamat-lengkap"
                 class="lg:w-1/2 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 placeholder:text-gray-500"
-                placeholder="Tulis alamat lengkap..."
+                placeholder="Tulis di sini..."
               />
             </div>
             <div class="mb-4">
@@ -677,7 +679,7 @@
                 type="text"
                 id="titik-koordinat"
                 class="lg:w-1/2 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 placeholder:text-gray-500"
-                placeholder="Tulis titik koordinat..."
+                placeholder="Tulis di sini..."
               />
             </div>
             <div class="lg:w-1/2">
@@ -687,7 +689,7 @@
               >
                 Status Kepemilikan Lahan
               </label>
-              <p class="mt-1 mb-3 text-sm text-gray-500 dark:text-gray-400">
+              <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
                 Harap cantumkan bukti foto plank jika ada
               </p>
               <div
@@ -743,7 +745,7 @@
                   id="table-zonasi-sekitar-site"
                   class="table-fixed w-full border-collapse"
                 >
-                  <thead class="bg-gray-200">
+                  <thead class="bg-gray-100">
                     <tr>
                       <th
                         class="border border-l-0 border-gray-300 w-64 md:w-full p-4 text-left font-medium align-middle"
@@ -787,9 +789,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="zonasi-status-row-1"
+                          value="true"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -797,9 +799,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Tidak Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="zonasi-status-row-1"
+                          value="false"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -817,9 +819,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="zonasi-status-row-2"
+                          value="true"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -828,9 +830,9 @@
                         <input
                           type="radio"
                           s
-                          name="status-row-1"
-                          value="Tidak Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="zonasi-status-row-2"
+                          value="false"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -848,9 +850,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="zonasi-status-row-3"
+                          value="true"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -858,9 +860,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Tidak Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="zonasi-status-row-3"
+                          value="false"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -878,9 +880,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="zonasi-status-row-4"
+                          value="true"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -888,9 +890,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Tidak Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="zonasi-status-row-4"
+                          value="false"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -908,9 +910,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="zonasi-status-row-5"
+                          value="true"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -918,9 +920,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Tidak Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="zonasi-status-row-5"
+                          value="false"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -938,9 +940,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="zonasi-status-row-6"
+                          value="true"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -948,9 +950,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Tidak Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="zonasi-status-row-6"
+                          value="false"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -968,9 +970,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="zonasi-status-row-7"
+                          value="true"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -978,9 +980,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Tidak Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="zonasi-status-row-7"
+                          value="false"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -998,9 +1000,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="zonasi-status-row-8"
+                          value="true"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -1008,9 +1010,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Tidak Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="zonasi-status-row-8"
+                          value="false"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -1059,7 +1061,7 @@
                   id="table-bangunan-penting-sekitar-site"
                   class="table-fixed w-full border-collapse"
                 >
-                  <thead class="bg-gray-200">
+                  <thead class="bg-gray-100">
                     <tr>
                       <th
                         class="border border-l-0 border-gray-300 w-64 md:w-full p-4 text-left font-medium align-middle"
@@ -1103,9 +1105,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="bangunan-status-row-1"
+                          value="true"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -1113,9 +1115,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Tidak Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="bangunan-status-row-1"
+                          value="false"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -1133,9 +1135,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="bangunan-status-row-2"
+                          value="true"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -1143,9 +1145,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Tidak Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="bangunan-status-row-2"
+                          value="false"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -1163,9 +1165,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="bangunan-status-row-3"
+                          value="true"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -1173,9 +1175,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Tidak Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="bangunan-status-row-3"
+                          value="false"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -1193,9 +1195,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="bangunan-status-row-4"
+                          value="true"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -1203,9 +1205,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Tidak Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="bangunan-status-row-4"
+                          value="false"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -1223,9 +1225,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="bangunan-status-row-5"
+                          value="true"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -1233,9 +1235,9 @@
                       >
                         <input
                           type="radio"
-                          name="status-row-1"
-                          value="Tidak Ada"
-                          class="w-5 h-5 text-blue-500"
+                          name="bangunan-status-row-5"
+                          value="false"
+                          class="w-5 h-5 border-gray-400 text-blue-500"
                         />
                       </td>
                       <td
@@ -1280,7 +1282,7 @@
             </h3>
             <div class="mt-5 overflow-x-auto">
               <table id="table-aksesibilitas" class="table-fixed w-full">
-                <thead class="bg-gray-200">
+                <thead class="bg-gray-100">
                   <tr>
                     <th
                       class="border border-l-0 border-gray-300 p-4 w-48 md:w-full text-left font-medium"
@@ -1484,7 +1486,7 @@
                 class="font-medium text-gray-900 dark:text-white"
               >
               </label>
-              <p class="mt-1 mb-3 text-sm text-gray-500 dark:text-gray-400">
+              <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
                 Lampirkan sisi utara, timur, selatan, dan barat
               </p>
               <div
@@ -1534,7 +1536,7 @@
             >
               View dari Dalam Site
             </h3>
-            <div class="mt-1 mb-4 lg:w-1/2">
+            <div class="mt-1 lg:w-1/2">
               <label
                 for="foto-view-dari-dalam-site"
                 class="font-medium text-gray-900 dark:text-white"
@@ -1592,7 +1594,7 @@
             </h3>
             <div class="mt-5 overflow-x-auto">
               <table id="table-perkerasan-eksisting" class="table-fixed w-full">
-                <thead class="bg-gray-200">
+                <thead class="bg-gray-100">
                   <tr>
                     <th
                       class="border border-l-0 border-gray-300 p-4 w-48 md:w-full text-left font-medium"
@@ -1766,7 +1768,7 @@
             </h3>
             <div class="mt-5 overflow-x-auto">
               <table id="table-drainase-riol-kota" class="table-fixed w-full">
-                <thead class="bg-gray-200">
+                <thead class="bg-gray-100">
                   <tr>
                     <th
                       class="border border-l-0 border-gray-300 p-4 w-48 md:w-full text-left font-medium"
@@ -1894,7 +1896,7 @@
                 id="table-genangan-potensi-genangan"
                 class="table-fixed w-full"
               >
-                <thead class="bg-gray-200">
+                <thead class="bg-gray-100">
                   <tr>
                     <th
                       class="border border-l-0 border-gray-300 p-4 w-48 md:w-full text-left font-medium"
@@ -1980,7 +1982,7 @@
                 id="table-tiang-listrik-di-dalam-site"
                 class="table-fixed w-full"
               >
-                <thead class="bg-gray-200">
+                <thead class="bg-gray-100">
                   <tr>
                     <th
                       class="border border-l-0 border-gray-300 p-4 w-48 md:w-full text-left font-medium"
@@ -2032,7 +2034,7 @@
             >
               Komponen Lain yang Ada di Dalam Site
             </h3>
-            <div class="mt-1 mb-4 lg:w-1/2">
+            <div class="mt-1 lg:w-1/2">
               <label
                 for="foto-komponen-lain-yang-ada-di-dalam-site"
                 class="font-medium text-gray-900 dark:text-white"
@@ -2089,7 +2091,7 @@
               Mapping Posisi Perkerasan Eksisting, Drainase, dan Tiang Listrik
               di Dalam Site
             </h3>
-            <div class="mt-1 mb-4 lg:w-1/2">
+            <div class="mt-1 lg:w-1/2">
               <label
                 for="foto-mapping-posisi-perkerasan"
                 class="font-medium text-gray-900 dark:text-white"
@@ -2138,11 +2140,216 @@
               ></div>
             </div>
           </div>
+          <div>
+            <h3
+              class="pt-10 sm:pt-12 font-bold text-2xl text-gray-900"
+              id="analisis-swot"
+            >
+              Analisis SWOT (Strengths, Weakness, Opportunity, and Threat)
+            </h3>
+            <div class="mt-5 overflow-x-auto">
+              <table id="table-analisis-swot" class="table-fixed w-full">
+                <thead>
+                  <tr>
+                    <th
+                      class="w-16 border-r border-b border-gray-300 bg-white align-middle"
+                    ></th>
+                    <th
+                      class="w-64 lg:w-full border-r border-b border-gray-300 bg-gray-100 text-center font-semibold p-4"
+                    >
+                      Membantu<br />
+                      <span class="font-normal text-sm"
+                        >(Hal-hal positif yang berpengaruh pada site dan
+                        desain)</span
+                      >
+                    </th>
+                    <th
+                      class="w-64 lg:w-full border-r border-b border-gray-300 bg-gray-100 text-center font-semibold p-4"
+                    >
+                      Menghambat<br />
+                      <span class="font-normal text-sm"
+                        >(Hal-hal negatif yang berpengaruh pada site dan
+                        desain)</span
+                      >
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td
+                      class="border-r border-b border-gray-300 bg-gray-100 text-center font-medium align-middle"
+                      rowspan="2"
+                    >
+                      <div class="flex items-center justify-center h-64">
+                        <span
+                          class="-rotate-90 writing-vertical-lr origin-center whitespace-nowrap font-semibold"
+                        >
+                          Pengaruh dari Dalam Site
+                        </span>
+                      </div>
+                    </td>
+                    <td
+                      class="w-64 lg:w-full h-16 p-4 border-r border-gray-300 text-center align-top font-semibold"
+                    >
+                      STRENGTHS<br />
+                      <span class="text-sm font-normal">(Kekuatan Site)</span>
+                    </td>
+                    <td
+                      class="w-64 lg:w-full h-16 p-4 border-r border-gray-300 text-center align-top font-semibold"
+                    >
+                      WEAKNESSES<br />
+                      <span class="text-sm font-normal">(Kelemahan Site)</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      contenteditable="true"
+                      class="w-64 lg:w-full p-4 border-r border-b border-gray-300 text-left align-top"
+                    ></td>
+                    <td
+                      contenteditable="true"
+                      class="w-64 lg:w-full p-4 border-r border-b border-gray-300 text-left align-top"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="border-r border-b border-gray-300 bg-gray-100 text-center font-medium align-middle"
+                      rowspan="2"
+                    >
+                      <div class="flex items-center justify-center h-64">
+                        <span
+                          class="-rotate-90 writing-vertical-lr origin-center whitespace-nowrap font-semibold"
+                        >
+                          Pengaruh dari Luar Site
+                        </span>
+                      </div>
+                    </td>
+                    <td
+                      class="w-64 lg:w-full h-16 p-4 border-r border-gray-300 text-center align-top font-semibold"
+                    >
+                      OPPORTUNITY<br />
+                      <span class="text-sm font-normal"
+                        >(Peluang/Potensi Site)</span
+                      >
+                    </td>
+                    <td
+                      class="w-64 lg:w-full h-16 p-4 border-r border-gray-300 text-center align-top font-semibold"
+                    >
+                      THREAT<br />
+                      <span class="text-sm font-normal"
+                        >(Ancaman terhadap Site)</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      contenteditable="true"
+                      class="w-64 lg:w-full p-4 border-r border-b border-gray-300 text-left align-top"
+                    ></td>
+                    <td
+                      contenteditable="true"
+                      class="w-64 lg:w-full p-4 border-r border-b border-gray-300 text-left align-top"
+                    ></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div>
+            <h3
+              class="pt-10 sm:pt-12 font-bold text-2xl text-gray-900"
+              id="kondisi-dan-pola-site"
+            >
+              Kondisi dan Pola Site
+            </h3>
+            <div class="mt-5 mb-4">
+              <label
+                for="alamat-lengkap"
+                class="block font-medium text-gray-900 dark:text-white"
+                >Bangunan Lain yang Mempengaruhi Site</label
+              >
+              <p class="mt-1 mb-3 text-sm text-gray-500 dark:text-gray-400">
+                Secara ketinggian lantai, view, atau sirkulasi
+              </p>
+              <input
+                type="text"
+                id="alamat-lengkap"
+                class="lg:w-1/2 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 placeholder:text-gray-500"
+                placeholder="Tulis di sini..."
+              />
+            </div>
+            <div class="mt-5 mb-4">
+              <label
+                for="alamat-lengkap"
+                class="block font-medium text-gray-900 dark:text-white"
+                >Pola yang Mendominasi di Sekitar Site</label
+              >
+              <p class="mt-1 mb-3 text-sm text-gray-500 dark:text-gray-400">
+                Misal: Bangunan tinggi atau area komersial
+              </p>
+              <input
+                type="text"
+                id="alamat-lengkap"
+                class="lg:w-1/2 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 placeholder:text-gray-500"
+                placeholder="Tulis di sini..."
+              />
+            </div>
+            <div class="mt-5 mb-4">
+              <label
+                for="alamat-lengkap"
+                class="block font-medium text-gray-900 dark:text-white"
+                >Permasalahan Berulang yang Selalu Terjadi di Sekitar
+                Site</label
+              >
+              <p class="mt-1 mb-3 text-sm text-gray-500 dark:text-gray-400">
+                Misal: Macet atau banjir
+              </p>
+              <input
+                type="text"
+                id="alamat-lengkap"
+                class="lg:w-1/2 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 placeholder:text-gray-500"
+                placeholder="Tulis di sini..."
+              />
+            </div>
+            <div class="mt-5 mb-4">
+              <label
+                for="alamat-lengkap"
+                class="block font-medium text-gray-900 dark:text-white"
+                >Regulasi Khusus yang Mengatur Kawasan Site</label
+              >
+              <p class="mt-1 mb-3 text-sm text-gray-500 dark:text-gray-400">
+                Misal: Cagar budaya atau cagar alam
+              </p>
+              <input
+                type="text"
+                id="alamat-lengkap"
+                class="lg:w-1/2 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 placeholder:text-gray-500"
+                placeholder="Tulis di sini..."
+              />
+            </div>
+            <div class="mt-5 mb-4">
+              <label
+                for="alamat-lengkap"
+                class="block font-medium text-gray-900 dark:text-white"
+                >Hal Lain yang Bisa Memberikan Dampak Secara Langsung Terhadap
+                Site</label
+              >
+              <p class="mt-1 mb-3 text-sm text-gray-500 dark:text-gray-400">
+                Misal:Tempat pembuangan sampah, kawasan rawan kriminalitas,
+                terminal, atau sungai
+              </p>
+              <input
+                type="text"
+                id="alamat-lengkap"
+                class="lg:w-1/2 bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 placeholder:text-gray-500"
+                placeholder="Tulis di sini..."
+              />
+            </div>
+          </div>
           <!-- Batas -->
         </form>
-        <div class="h-screen"></div>
-      </section>
-    </main>
+      </main>
+    </div>
 
     <div
       id="image-modal"
@@ -2180,9 +2387,9 @@
       </div>
     </div>
 
-    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script src="../scripts/perancangan/step-1/upload-image.js"></script>
-    <script src="../scripts/perancangan/step-1/table-add-delete-row-config.js"></script>
-    <script src="../scripts/sidebar-nav.js"></script>
+    <script src="../../../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../../scripts/perancangan/step-1/upload-image.js"></script>
+    <script src="../../scripts/perancangan/step-1/table-add-delete-row-config.js"></script>
+    <script src="../../scripts/sidebar-nav.js"></script>
   </body>
 </html>

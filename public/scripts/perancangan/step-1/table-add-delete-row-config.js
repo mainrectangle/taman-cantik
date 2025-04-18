@@ -70,11 +70,11 @@ initDynamicTable({
 
     const adaCell = document.createElement("td");
     adaCell.className = cellClass;
-    adaCell.innerHTML = `<input type="radio" name="status-row-${table2RowIndex}" value="Ada" class="w-5 h-5 text-blue-500" />`;
+    adaCell.innerHTML = `<input type="radio" name="status-row-${table2RowIndex}" value="true" class="w-5 h-5 text-blue-500" />`;
 
     const tidakAdaCell = document.createElement("td");
     tidakAdaCell.className = cellClass;
-    tidakAdaCell.innerHTML = `<input type="radio" name="status-row-${table2RowIndex}" value="Tidak Ada" class="w-5 h-5 text-blue-500" />`;
+    tidakAdaCell.innerHTML = `<input type="radio" name="status-row-${table2RowIndex}" value="false" class="w-5 h-5 text-blue-500" />`;
 
     const actionCell = document.createElement("td");
     actionCell.className =
@@ -116,11 +116,11 @@ initDynamicTable({
 
     const adaCell = document.createElement("td");
     adaCell.className = cellClass;
-    adaCell.innerHTML = `<input type="radio" name="status-dalam-row-${table3RowIndex}" value="Ada" class="w-5 h-5 text-blue-500" />`;
+    adaCell.innerHTML = `<input type="radio" name="status-dalam-row-${table3RowIndex}" value="true" class="w-5 h-5 text-blue-500" />`;
 
     const tidakAdaCell = document.createElement("td");
     tidakAdaCell.className = cellClass;
-    tidakAdaCell.innerHTML = `<input type="radio" name="status-dalam-row-${table3RowIndex}" value="Tidak Ada" class="w-5 h-5 text-blue-500" />`;
+    tidakAdaCell.innerHTML = `<input type="radio" name="status-dalam-row-${table3RowIndex}" value="false" class="w-5 h-5 text-blue-500" />`;
 
     const actionCell = document.createElement("td");
     actionCell.className =

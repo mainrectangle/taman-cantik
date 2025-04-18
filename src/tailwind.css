@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
   }
 
+  [id] {
+    scroll-margin-top: 2.5rem; /* adjust to match top-14 or header height */
+  }
+
   .hide-scrollbar::-webkit-scrollbar {
     display: none;
   }
