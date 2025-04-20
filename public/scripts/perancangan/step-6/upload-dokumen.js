@@ -74,7 +74,25 @@ function initPDFUpload({ inputId, uploadAreaId, previewContainerId }) {
 
 // Call the function for PDF upload
 initPDFUpload({
-  inputId: "dokumen-paparan-final",
-  uploadAreaId: "upload-dokumen-paparan-final",
-  previewContainerId: "preview-dokumen-paparan-final",
+  inputId: "dokumen-paparan-taman-final",
+  uploadAreaId: "upload-dokumen-paparan-taman-final",
+  previewContainerId: "preview-dokumen-paparan-taman-final",
+});
+
+initPDFUpload({
+  inputId: "dokumen-gambar-yang-telah-disahkan",
+  uploadAreaId: "upload-dokumen-gambar-yang-telah-disahkan",
+  previewContainerId: "preview-dokumen-gambar-yang-telah-disahkan",
+});
+
+initPDFUpload({
+  inputId: "dokumen-rab-yang-telah-disahkan",
+  uploadAreaId: "upload-dokumen-rab-yang-telah-disahkan",
+  previewContainerId: "preview-dokumen-rab-yang-telah-disahkan",
+});
+
+initPDFUpload({
+  inputId: "dokumen-spesifikasi-teknis-yang-telah-disahkan",
+  uploadAreaId: "upload-dokumen-spesifikasi-teknis-yang-telah-disahkan",
+  previewContainerId: "preview-dokumen-spesifikasi-teknis-yang-telah-disahkan",
 });
