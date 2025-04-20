@@ -445,17 +445,1166 @@
               class="pt-10 sm:pt-12 font-bold text-2xl text-gray-900"
               id="penilaian-layanan-taman"
             >
-            Penilaian Layanan Taman
+              Penilaian Layanan Taman
             </h3>
-            <div class="mt-1 lg:w-1/2">
-              <label
-                for="dokumen-preseden"
-                class="font-medium text-gray-900 dark:text-white"
+            <h4 class="mt-6 font-bold text-xl text-gray-900">
+              Moda transportasi publik
+            </h4>
+            <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
+              Keterangan: Checklist kesesuaian akan diisi oleh Tim SKPD terkait.
+            </p>
+            <div class="mt-5 overflow-x-auto">
+              <table
+                id="table-moda-transportasi-publik"
+                class="table-fixed w-full border-collapse"
               >
-              </label>
-              <p class="mt-1 mb-3 text-sm text-gray-500 dark:text-gray-400">
-                Keterangan: Penilaian akan diisi oleh Tim SKPD terkait.
-              </p>
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th
+                      class="border border-l-0 border-gray-300 w-64 p-4 text-left font-medium align-middle"
+                      rowspan="3"
+                    >
+                      Deskripsi Indikator
+                    </th>
+                    <th
+                      class="border border-gray-300 w-64 p-4 text-left font-medium align-middle"
+                      rowspan="3"
+                    >
+                      Parameter
+                    </th>
+                    <th
+                      class="border border-gray-300 w-[28rem] p-4 font-medium text-center text-gray-400 bg-gray-200"
+                      colspan="5"
+                    >
+                      Ceklis Kesesuaian
+                    </th>
+                    <th
+                      class="border border-r-0 border-gray-300 w-24 p-4 font-medium text-left text-gray-400 bg-gray-200 align-middle"
+                      rowspan="3"
+                    >
+                      Skor Akhir
+                    </th>
+                  </tr>
+                  <tr>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      5
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      4
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      3
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      2
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      1
+                    </th>
+                  </tr>
+                  <tr>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      &gt;= 5 moda
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      &gt; 4 moda
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      &gt; 3 moda
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      &gt; 2 moda
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      &gt; 1 moda
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td
+                      class="border border-l-0 border-gray-300 p-4 w-64 break-words align-top"
+                    >
+                      Merujuk pada jumlah opsi moda transportasi publik yang
+                      tersedia di sekitar taman— yang mencakup Transjakarta, KRL
+                      Commuter Line, MRT, LRT, dan Jaklingko. Semakin banyak
+                      opsi moda transportasi, maka akan semakin tinggi pula
+                      skornya
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 w-64 break-words align-top"
+                    >
+                      Jumlah moda transportasi publik tersedia di sekitar taman
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="moda-transportasi-publik"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="moda-transportasi-publik"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="moda-transportasi-publik"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="moda-transportasi-publik"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="moda-transportasi-publik"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-r-0 border-gray-300 w-24 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="border border-l-0 border-gray-300 p-4 w-64 md:w-full break-words align-top font-bold bg-gray-200"
+                    >
+                      Keterangan moda transportasi:
+                    </td>
+                    <td
+                      class="border border-r-0 border-gray-300 p-4 w-64 md:w-full break-words align-top font-bold bg-gray-200"
+                      colspan="7"
+                    ></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h4 class="mt-6 font-bold text-xl text-gray-900">Jarak tempuh</h4>
+            <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
+              Keterangan: Checklist kesesuaian akan diisi oleh Tim SKPD terkait.
+            </p>
+            <div class="mt-5 overflow-x-auto">
+              <table
+                id="table-jarak-tempuh"
+                class="table-fixed w-full border-collapse"
+              >
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th
+                      class="border border-l-0 border-gray-300 w-64 p-4 text-left font-medium align-middle"
+                      rowspan="3"
+                    >
+                      Deskripsi Indikator
+                    </th>
+                    <th
+                      class="border border-gray-300 w-64 p-4 text-left font-medium align-middle"
+                      rowspan="3"
+                    >
+                      Parameter
+                    </th>
+                    <th
+                      class="border border-gray-300 w-[28rem] p-4 font-medium text-center text-gray-400 bg-gray-200"
+                      colspan="5"
+                    >
+                      Ceklis Kesesuaian
+                    </th>
+                    <th
+                      class="border border-r-0 border-gray-300 w-24 p-4 font-medium text-left text-gray-400 bg-gray-200 align-middle"
+                      rowspan="3"
+                    >
+                      Skor Akhir
+                    </th>
+                  </tr>
+                  <tr>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      5
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      4
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      3
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      2
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      1
+                    </th>
+                  </tr>
+                  <tr>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      ??? m
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      ??? m
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      ??? m
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      ??? m
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      ??? m
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td
+                      class="border border-l-0 border-gray-300 p-4 w-64 break-words align-top"
+                    >
+                      Merujuk pada jarak antara taman dengan moda transportasi
+                      publik. Semakin dekat jarak dengan moda transportasi
+                      publik, maka akan semakin tinggi pula skornya
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 w-64 break-words align-top"
+                    >
+                      Jarak ke titik moda terdekat
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="jarak-tempuh"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="jarak-tempuh"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="jarak-tempuh"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="jarak-tempuh"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="jarak-tempuh"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-r-0 border-gray-300 w-24 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="border border-l-0 border-gray-300 p-4 w-64 md:w-full break-words align-top font-bold bg-gray-200"
+                    >
+                      Keterangan jarak tempuh:
+                    </td>
+                    <td
+                      class="border border-r-0 border-gray-300 p-4 w-64 md:w-full break-words align-top font-bold bg-gray-200"
+                      colspan="7"
+                    ></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h4 class="mt-6 font-bold text-xl text-gray-900">Aktivitas</h4>
+            <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
+              Keterangan: Checklist kesesuaian akan diisi oleh Tim SKPD terkait.
+            </p>
+            <div class="mt-5 overflow-x-auto">
+              <table
+                id="table-aktivitas"
+                class="table-fixed w-full border-collapse"
+              >
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th
+                      class="border border-l-0 border-gray-300 w-64 p-4 text-left font-medium align-middle"
+                      rowspan="3"
+                    >
+                      Deskripsi Indikator
+                    </th>
+                    <th
+                      class="border border-gray-300 w-64 p-4 text-left font-medium align-middle"
+                      rowspan="3"
+                    >
+                      Parameter
+                    </th>
+                    <th
+                      class="border border-gray-300 w-[28rem] p-4 font-medium text-center text-gray-400 bg-gray-200"
+                      colspan="5"
+                    >
+                      Ceklis Kesesuaian
+                    </th>
+                    <th
+                      class="border border-r-0 border-gray-300 w-24 p-4 font-medium text-left text-gray-400 bg-gray-200 align-middle"
+                      rowspan="3"
+                    >
+                      Skor Akhir
+                    </th>
+                  </tr>
+                  <tr>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      5
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      4
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      3
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      2
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      1
+                    </th>
+                  </tr>
+                  <tr>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Sangat Kurang
+                      <br />
+                      (0-2 Aktivitas)
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Kurang
+                      <br />
+                      (3-4 Aktivitas)
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Cukup
+                      <br />
+                      (5-6 Aktivitas)
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Baik
+                      <br />
+                      (7-8 Aktivitas)
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Sangat Baik
+                      <br />
+                      (&gt;8 Aktivitas)
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td
+                      class="border border-l-0 border-gray-300 p-4 w-64 break-words align-top"
+                    >
+                      Merujuk pada ragam aktivitas yang bisa dilakukan baik di
+                      dalam taman. Aspek ini juga berkaitan dengan banyaknya
+                      komunitas yang dapat memanfaatkan taman. Semakin banyak
+                      aktivitas, maka semakin besar pula skornya.
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 w-64 break-words align-top"
+                    >
+                      Terdapat beragam aktivitas di dalam taman
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="aktivitas"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="aktivitas"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="aktivitas"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="aktivitas"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="aktivitas"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-r-0 border-gray-300 w-24 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="border border-l-0 border-gray-300 p-4 w-64 md:w-full break-words align-top font-bold bg-gray-200"
+                    >
+                      Keterangan aktivitas:
+                    </td>
+                    <td
+                      class="border border-r-0 border-gray-300 p-4 w-64 md:w-full break-words align-top font-bold bg-gray-200"
+                      colspan="7"
+                    ></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h4 class="mt-6 font-bold text-xl text-gray-900">
+              Fasilitas Taman
+            </h4>
+            <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
+              Keterangan: Checklist kesesuaian akan diisi oleh Tim SKPD terkait.
+            </p>
+            <div class="mt-5 overflow-x-auto">
+              <table
+                id="table-fasilitas-taman"
+                class="table-fixed w-full border-collapse"
+              >
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th
+                      class="border border-l-0 border-gray-300 w-64 p-4 text-left font-medium align-middle"
+                      rowspan="3"
+                    >
+                      Deskripsi Indikator
+                    </th>
+                    <th
+                      class="border border-gray-300 w-64 p-4 text-left font-medium align-middle"
+                      rowspan="3"
+                    >
+                      Parameter
+                    </th>
+                    <th
+                      class="border border-gray-300 w-[28rem] p-4 font-medium text-center text-gray-400 bg-gray-200"
+                      colspan="5"
+                    >
+                      Ceklis Kesesuaian
+                    </th>
+                    <th
+                      class="border border-r-0 border-gray-300 w-24 p-4 font-medium text-left text-gray-400 bg-gray-200 align-middle"
+                      rowspan="3"
+                    >
+                      Skor Akhir
+                    </th>
+                  </tr>
+                  <tr>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      5
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      4
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      3
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      2
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      1
+                    </th>
+                  </tr>
+                  <tr>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Sangat Kurang
+                      <br />
+                      (0-2 Fasilitas)
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Kurang
+                      <br />
+                      (3-4 Fasilitas)
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Cukup
+                      <br />
+                      (5-6 Fasilitas)
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Baik
+                      <br />
+                      (7-8 Fasilitas)
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Sangat Baik
+                      <br />
+                      (&gt;8 Fasilitas)
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td
+                      class="border border-l-0 border-gray-300 p-4 w-64 break-words align-top"
+                    >
+                      Merujuk pada kelengkapan elemen lanskap di taman. Semakin
+                      banyak elemen lanskap yang ada di dalam taman, maka akan
+                      semakin besar pula skornya.
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 w-64 break-words align-top"
+                    >
+                      Memiliki fasilitas berikut:
+                      <ol class="list-decimal mx-5">
+                        <li>Sirkulasi</li>
+                        <li>Service (Toilet)</li>
+                        <li>Kebersihan (Tempat Sampah)</li>
+                        <li>Olahraga</li>
+                        <li>Kesenian</li>
+                        <li>Bangunan Serbaguna</li>
+                        <li>Komunal Space</li>
+                        <li>Bermain</li>
+                        <li>Pencahayaan</li>
+                        <li>Tempat Ibadah</li>
+                      </ol>
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="fasilitas-taman"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="fasilitas-taman"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="fasilitas-taman"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="fasilitas-taman"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="fasilitas-taman"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-r-0 border-gray-300 w-24 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="border border-l-0 border-gray-300 p-4 w-64 md:w-full break-words align-top font-bold bg-gray-200"
+                    >
+                      Keterangan fasilitas taman:
+                    </td>
+                    <td
+                      class="border border-r-0 border-gray-300 p-4 w-64 md:w-full break-words align-top font-bold bg-gray-200"
+                      colspan="7"
+                    ></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h4 class="mt-6 font-bold text-xl text-gray-900">
+              Keselamatan dan Keamanan
+            </h4>
+            <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
+              Keterangan: Checklist kesesuaian akan diisi oleh Tim SKPD terkait.
+            </p>
+            <div class="mt-5 overflow-x-auto">
+              <table
+                id="table-keselamatan-dan-keamanan"
+                class="table-fixed w-full border-collapse"
+              >
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th
+                      class="border border-l-0 border-gray-300 w-64 p-4 text-left font-medium align-middle"
+                      rowspan="3"
+                    >
+                      Deskripsi Indikator
+                    </th>
+                    <th
+                      class="border border-gray-300 w-64 p-4 text-left font-medium align-middle"
+                      rowspan="3"
+                    >
+                      Parameter
+                    </th>
+                    <th
+                      class="border border-gray-300 w-[28rem] p-4 font-medium text-center text-gray-400 bg-gray-200"
+                      colspan="5"
+                    >
+                      Ceklis Kesesuaian
+                    </th>
+                    <th
+                      class="border border-r-0 border-gray-300 w-24 p-4 font-medium text-left text-gray-400 bg-gray-200 align-middle"
+                      rowspan="3"
+                    >
+                      Skor Akhir
+                    </th>
+                  </tr>
+                  <tr>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      5
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      4
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      3
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      2
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      1
+                    </th>
+                  </tr>
+                  <tr>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Sangat Kurang
+                      <br />
+                      (1 Aspek)
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Kurang
+                      <br />
+                      (2 Aspek)
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Cukup
+                      <br />
+                      (3 Aspek)
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Baik
+                      <br />
+                      (4 Aspek)
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Sangat Baik
+                      <br />
+                      (5 Aspek)
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td
+                      class="border border-l-0 border-gray-300 p-4 w-64 break-words align-top"
+                    >
+                      Merujuk pada kelengkapan aspek keselamatan dan keamanan di
+                      taman. Semakin banyak aspek keselamatan dan keamanan yang
+                      terpenuhi, maka semakin besar pula skornya.
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 w-64 break-words align-top"
+                    >
+                      Memiliki aspek keselamatan dan keamanan berikut:
+                      <ol class="list-decimal mx-5">
+                        <li>Taman dijaga oleh petugas keamanan</li>
+                        <li>
+                          Taman dikelilingi pagar dengan akses keluar masuk yang
+                          terawasi petugas keamanan
+                        </li>
+                        <li>Taman memiliki kamera CCTV</li>
+                        <li>
+                          Taman memiliki railing pengaman terhadap perbedaan
+                          ketinggian atau ramp
+                        </li>
+                        <li>
+                          Pohon yang tidak membahayakan keselamatan (memiliki
+                          duri)
+                        </li>
+                      </ol>
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="keselamatan-dan-keamanan"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="keselamatan-dan-keamanan"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="keselamatan-dan-keamanan"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="keselamatan-dan-keamanan"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="keselamatan-dan-keamanan"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-r-0 border-gray-300 w-24 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="border border-l-0 border-gray-300 p-4 w-64 md:w-full break-words align-top font-bold bg-gray-200"
+                    >
+                      Keterangan keselamatan dan keamanan:
+                    </td>
+                    <td
+                      class="border border-r-0 border-gray-300 p-4 w-64 md:w-full break-words align-top font-bold bg-gray-200"
+                      colspan="7"
+                    ></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h4 class="mt-6 font-bold text-xl text-gray-900">Fitur Ekologis</h4>
+            <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
+              Keterangan: Checklist kesesuaian akan diisi oleh Tim SKPD terkait.
+            </p>
+            <div class="mt-5 overflow-x-auto">
+              <table
+                id="table-fitur-ekologis"
+                class="table-fixed w-full border-collapse"
+              >
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th
+                      class="border border-l-0 border-gray-300 w-64 p-4 text-left font-medium align-middle"
+                      rowspan="3"
+                    >
+                      Deskripsi Indikator
+                    </th>
+                    <th
+                      class="border border-gray-300 w-64 p-4 text-left font-medium align-middle"
+                      rowspan="3"
+                    >
+                      Parameter
+                    </th>
+                    <th
+                      class="border border-gray-300 w-[28rem] p-4 font-medium text-center text-gray-400 bg-gray-200"
+                      colspan="5"
+                    >
+                      Ceklis Kesesuaian
+                    </th>
+                    <th
+                      class="border border-r-0 border-gray-300 w-24 p-4 font-medium text-left text-gray-400 bg-gray-200 align-middle"
+                      rowspan="3"
+                    >
+                      Skor Akhir
+                    </th>
+                  </tr>
+                  <tr>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      5
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      4
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      3
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      2
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      1
+                    </th>
+                  </tr>
+                  <tr>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Sangat Kurang
+                      <br />
+                      (0 Komponen)
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Kurang
+                      <br />
+                      (1 Komponen)
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Cukup
+                      <br />
+                      (2 Komponen)
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Baik
+                      <br />
+                      (3 Komponen)
+                    </th>
+                    <th
+                      class="border border-gray-300 p-4 text-center font-medium text-gray-400 bg-gray-200"
+                    >
+                      Sangat Baik
+                      <br />
+                      (4 Komponen)
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td
+                      class="border border-l-0 border-gray-300 p-4 w-64 break-words align-top"
+                    >
+                      Merujuk pada komponen alam yang ada dalam taman. Semakin
+                      besar porsi fitur ekologi dalam taman, maka akan semakin
+                      besar skornya.
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 w-64 break-words align-top"
+                    >
+                      Memiliki komponen alam berikut:
+                      <ol class="list-decimal mx-5">
+                        <li>Memiliki bioswale</li>
+                        <li>Menggunakan perkerasan berpori</li>
+                        <li>
+                          Memiliki sumur resapan, embung, atau sarana sejenis
+                        </li>
+                        <li>
+                          Memiliki pohon dengan kriteria penyerap karbon tinggi
+                          (trembesi, cassia, kenanga, pingku, beringin, kerai
+                          payung, matoa, mahoni, pinus, jati, eukaliptus,
+                          mangrove)
+                        </li>
+                      </ol>
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="fitur-ekologis"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="fitur-ekologis"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="fitur-ekologis"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="fitur-ekologis"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-gray-300 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    >
+                      <input
+                        type="radio"
+                        name="fitur-ekologis"
+                        value="true"
+                        class="w-5 h-5 border-gray-400 text-blue-500 bg-gray-200"
+                        disabled
+                      />
+                    </td>
+                    <td
+                      class="border border-r-0 border-gray-300 w-24 p-4 text-center align-top text-gray-400 bg-gray-200"
+                    ></td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="border border-l-0 border-gray-300 p-4 w-64 md:w-full break-words align-top font-bold bg-gray-200"
+                    >
+                      Keterangan fitur ekologis:
+                    </td>
+                    <td
+                      class="border border-r-0 border-gray-300 p-4 w-64 md:w-full break-words align-top font-bold bg-gray-200"
+                      colspan="7"
+                    ></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <div>
             <h3
@@ -515,7 +1664,7 @@
               class="pt-10 sm:pt-12 font-bold text-2xl text-gray-900"
               id="ded-final"
             >
-            DED Final
+              DED Final
             </h3>
             <div class="mt-4 lg:w-1/2">
               <h4 class="font-bold text-xl text-gray-900">
@@ -670,7 +1819,7 @@
               class="pt-10 sm:pt-12 font-bold text-2xl text-gray-900"
               id="paparan-taman-final"
             >
-            Paparan Taman Final
+              Paparan Taman Final
             </h3>
             <div class="mt-1 lg:w-1/2">
               <label

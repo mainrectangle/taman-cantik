@@ -1863,6 +1863,10 @@ input:checked + .toggle-bg {
   width: 24rem;
 }
 
+.w-\[35rem\] {
+  width: 35rem;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -1872,16 +1876,12 @@ input:checked + .toggle-bg {
   width: 100%;
 }
 
-.w-\[36rem\] {
-  width: 36rem;
+.w-\[25rem\] {
+  width: 25rem;
 }
 
-.w-\[34rem\] {
-  width: 34rem;
-}
-
-.w-\[35rem\] {
-  width: 35rem;
+.w-\[28rem\] {
+  width: 28rem;
 }
 
 .max-w-\[90vw\] {
@@ -1977,6 +1977,10 @@ input:checked + .toggle-bg {
 
 .list-loweralpha {
   list-style-type: lower-alpha;
+}
+
+.list-decimal {
+  list-style-type: decimal;
 }
 
 .grid-cols-4 {
